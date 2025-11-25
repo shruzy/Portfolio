@@ -1,0 +1,8 @@
+project/
+│── app.py
+│── requirements.txt
+│── Procfile
+│── templates/
+│     └── index.html
+│── static/
+      └── style.css
