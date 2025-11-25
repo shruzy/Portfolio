@@ -1,0 +1,202 @@
+/* Global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f0f4ff;
+    color: #333;
+    line-height: 1.7;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.role {
+    font-size: 1.3rem;
+    color: #4b5563;
+    margin-top: 8px;
+}
+
+/* Section styling */
+section {
+    max-width: 850px;
+    background: #ffffff;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+/* Skills chips */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-list span {
+    background: #e3eaff;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #1f2937;
+    transition: 0.2s;
+}
+
+.skill-list span:hover {
+    background: #c8d8ff;
+    transform: translateY(-3px);
+}
+
+/* Project cards */
+.project {
+    background: #f8f9ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    border-left: 5px solid #4f46e5;
+    transition: 0.2s;
+}
+
+.project:hover {
+    transform: translateX(5px);
+    background: #eef1ff;
+}
+
+.project h3 {
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+/* Contact links */
+#contact a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #6b7280;
+}
+footer p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Floating Profile Image */
+.profile-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    position: sticky;
+    top: 20px;
+    z-index: 10;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+/* 🔥 Parallax Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px; /* You can increase this */
+    overflow: hidden;
+}
+
+/* 📸 Vogue-Style Hero Text */
+.hero-text {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+    color: white;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.hero-role {
+    font-size: 1.2rem;
+    margin-top: 8px;
+    letter-spacing: 2px;
+    opacity: 0.9;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
+/* Overlay for better readability */
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.6)
+    );
+    z-index: 1;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: fixed;  /* stays still when scrolling */
+    top: 0;
+    left: 0;
+    z-index: -1;      /* content scrolls over it */
+    filter: brightness(90%);
+}
+
+/* Content should have spacing so it doesn't overlap permanently */
+body {
+    padding-top: 320px; /* matches hero height */
+}
